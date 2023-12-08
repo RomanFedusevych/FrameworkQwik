@@ -7,6 +7,11 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -32,4 +37,24 @@ html {
 body {
   padding: 0;
   line-height: inherit;
+}
+
+.custom-bg-gradient {
+  background: linear-gradient(180deg, #000 0%, #171717 100%);
+}
+
+.custom-bg-border {
+  background: linear-gradient(180deg, #9363FD 0%, #171717 100%);
+}
+
+.transition-bottom {
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.custom-font-family {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.custom-line-height {
+  line-height: 130%;
 }
